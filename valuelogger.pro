@@ -21,10 +21,9 @@ i18n.files = i18n/translations_fi.qm \
 
 INSTALLS += i18n
 
-SOURCES += src/valuelogger.cpp \
-	src/logger.cpp
+SOURCES += src/valuelogger.cpp
 	
-HEADERS += src/logger.h
+HEADERS +=
 
 OTHER_FILES += qml/valuelogger.qml \
     qml/cover/CoverPage.qml \

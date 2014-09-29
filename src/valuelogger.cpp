@@ -21,13 +21,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include <QGuiApplication>
 #include <QQmlContext>
 #include <QCoreApplication>
-#include "logger.h"
-
 
 int main(int argc, char *argv[])
 {
-    qmlRegisterType<Logger>("harbour.valuelogger.Logger", 1, 0, "Logger");
-
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
 
     QTranslator translator;
